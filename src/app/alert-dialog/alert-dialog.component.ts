@@ -91,7 +91,6 @@ export class AlertDialogComponent {
 
     private onNoPressed() {
         this.hide();
-        // var db = this.db.list('https://tasty-kitchen.firebaseio.com/');
         var self = this;
         var m = moment();
         var today = m.format('YYYY-MM-DD');
@@ -109,7 +108,6 @@ export class AlertDialogComponent {
     private onYesPressed() {
         this.hide();
         // this.records = this.db.list('records');
-        // var db = this.db.list('https://tasty-kitchen.firebaseio.com/');
         var self = this;
         var m = moment();
         var today = m.format('YYYY-MM-DD');

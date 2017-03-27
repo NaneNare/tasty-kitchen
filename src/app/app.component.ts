@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ScheduleService } from "app/schedule.service";
+
 
 // import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
@@ -8,10 +10,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // private title = 'app works!';
-  // private items: FirebaseListObservable<any[]>;
 
-  // constructor(af: AngularFire) {
-  //   this.items = af.database.list('/items');
-  // }
+  constructor(service: ScheduleService) {
+
+  }
 }

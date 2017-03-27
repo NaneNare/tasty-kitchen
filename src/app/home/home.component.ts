@@ -51,22 +51,6 @@ export class HomeComponent {
     var today = m.format('YYYY-MM-DD');
     var result = this.modelService.getNotParticipantsForDate(today);
     console.log('>>>>>>> no participants for ' + today + ' is/are ' + result);
-    //   var db = this.db.list('https://tasty-kitchen.firebaseio.com/');
-    //   var m = moment();
-    //   var today = m.format('YYYY-MM-DD');
-    //   var self = this;
-    //   db.$ref.once('value', function (s) {
-    //     console.log('--- once onGetNotParticipantsForTodayButtonClick ' + s.hasChild('records'));
-    //     var jsonPath = 'records/' + today + '/no-participants/';
-    //     var jsonArr = s.child(jsonPath).val();
-    //     var result = '';
-    //     if (null != jsonArr) {
-    //       result = self.getNamesOfUsers(s, jsonArr);
-    //     } else {
-    //       result = 'none';
-    //     }
-    //     console.log('>>>>>>> no participants for ' + today + ' is/are ' + result);
-    //   })
   }
 
   private onGetParticipantsCountForTodayButtonClick() {
@@ -74,17 +58,6 @@ export class HomeComponent {
     var today = m.format('YYYY-MM-DD');
     var result = this.modelService.getParticipantsCountForDate(today);
     console.log('>>>>>>> participants count for ' + today + ' is/are ' + result);
-    //   var db = this.db.list('https://tasty-kitchen.firebaseio.com/');
-    //   var m = moment();
-    //   var today = m.format('YYYY-MM-DD');
-    //   var self = this;
-    //   db.$ref.once('value', function (s) {
-    //     console.log('--- once onGetParticipantsCountForTodayButtonClick ' + s.hasChild('records'));
-    //     var jsonPath = 'records/' + today + '/participants/';
-    //     var jsonArr = s.child(jsonPath).val();
-    //     var result = self.getCount(jsonArr);
-    //     console.log('>>>>>>> participants count for ' + today + ' is/are ' + result);
-    //   })
   }
 
   // private getNamesOfUsers(root: firebase.database.DataSnapshot, jsonArr: any[]) {

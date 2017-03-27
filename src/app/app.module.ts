@@ -17,6 +17,7 @@ import { routes } from './app.routes';
 import { RegisterComponent } from './register/register.component';
 import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
 import { ModelService } from 'app/model.service';
+import { ScheduleService } from 'app/schedule.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { ModelService } from 'app/model.service';
     AngularFireModule.initializeApp(firebaseConfig),
     routes
   ],
-  providers: [AuthGuard, ModelService],
+  providers: [AuthGuard, ModelService, ScheduleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

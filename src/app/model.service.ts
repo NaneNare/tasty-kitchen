@@ -8,7 +8,8 @@ export class ModelService {
   private database: FirebaseListObservable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
-    this.database = this.db.list('https://tasty-kitchen.firebaseio.com/');
+    //TODO: correct
+    this.database = this.db.list('https://tasty-kitchen-7e6c3.firebaseio.com'); //TODO
   }
 
   public addParticipantInto(jsonKeyPrt1: string, jsonKeyPrt2: string, uuid: string, date: string) {
